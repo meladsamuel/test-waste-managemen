@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 function App() {
   const [msg, setMsg] = useState(null);
   function hiHandler() {
-    setMsg('hi');
+    setMsg((prevData) => `${prevData} hi`);
   }
   return (
     <div className="App">
@@ -13,7 +13,7 @@ function App() {
         <p>welcome abdelrazek and mostafa :)</p>
         <p> test the deploy from other repo</p>
         <button type="button" onClick={hiHandler}>
-          hi
+          say
         </button>
       </header>
     </div>
