@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>{msg}</p>
-        <p>test husky 2</p>
+        <p>test husky 22</p>
         <p>welcome abdelrazek and mostafa :)</p>
         <p> test the deploy from other repo</p>
         <button type="button" onClick={hiHandler}>
