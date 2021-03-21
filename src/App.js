@@ -11,8 +11,8 @@ function App() {
       <header className="App-header">
         <p>{msg}</p>
         <p>test husky 22</p>
-        <p>welcome abdelrazek and mostafa :)</p>
-        <p> test the deploy from other repo</p>
+        <p>welcome abdelrazek and mostafa :2</p>
+        <p> test the deploy from other repo 2</p>
         <button type="button" onClick={hiHandler}>
           say
         </button>
