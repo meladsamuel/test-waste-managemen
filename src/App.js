@@ -10,6 +10,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>{msg}</p>
+        <p>update from the server</p>
         <p>hi</p>
         <p>welcome abdelrazek and mostafa :2</p>
         <p> test the deploy from other repo 2</p>
