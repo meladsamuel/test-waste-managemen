@@ -5,6 +5,7 @@ function App() {
   function hiHandler() {
     setMsg((prevData) => `${prevData} hi`);
   }
+
   return (
     <div className="App">
       <header className="App-header">
