@@ -14,7 +14,7 @@ function App() {
         <p>welcome abdelrazek and mostafa :2</p>
         <p> test the deploy from other repo 2</p>
         <button type="button" onClick={hiHandler}>
-          say
+          say hi
         </button>
       </header>
     </div>
