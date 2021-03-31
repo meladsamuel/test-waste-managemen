@@ -102,7 +102,7 @@ export const usePublish = (topic) => {
   const publish = (message) => {
     setIsPending(true);
     apiNode
-      .post(topic, message)
+      .post(topic, { payload: message })
       .then(({ data }) => {
         setPayload(data);
         setIsPending(false);
