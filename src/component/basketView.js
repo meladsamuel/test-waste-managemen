@@ -24,10 +24,15 @@ const BasketView = () => {
     'baskets',
     getAll
   );
-  const { isPending: publishing, publish } = usePublish('sensor');
+  const { isPending: publishing, publish } = usePublish('pub/sensor');
+  const submiting = (e) => {
+    e.preventDefault();
+    publish(msg.current.value);
+    msg.current.value = '';
+  };
   return (
     <Container>
-      <Form>
+      <Form onSubmit={submiting}>
         <InputGroup>
           <FormControl
             ref={msg}
@@ -36,10 +41,7 @@ const BasketView = () => {
             placeholder="your message"
           />
           <InputGroup.Append>
-            <Button
-              onClick={() => publish(msg.current.valueb)}
-              variant="outline-secondary"
-            >
+            <Button type="submit" variant="outline-secondary">
               {publishing ? 'publishing...' : 'Publish'}
             </Button>
           </InputGroup.Append>
